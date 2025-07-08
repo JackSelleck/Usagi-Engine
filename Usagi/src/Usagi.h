@@ -4,6 +4,7 @@
 
 #include <stdio.h>
 #include "Usagi/Application.h"
+#include "Usagi/Log.h"
 
 // ------- Entry Point -------
 #include "Usagi/EntryPoint.h"
