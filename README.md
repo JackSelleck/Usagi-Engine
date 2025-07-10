@@ -3,6 +3,8 @@ The Usagi Game Engine
 
 Gonna be awhile till this is done cause game engine be big, im mostly just following along with the chernos extremly lengthy game engine series.
 
+One thing im doing differently from the series is using cmake rather than premake 
+
 But once i know what im doing id like to pivot to making a better rpg maker, since a lot of my favorite games are top town 2D!!!
 
 Despite this the engine will have 3D capability as well as 2D, basically just for portfolio reasons. 
