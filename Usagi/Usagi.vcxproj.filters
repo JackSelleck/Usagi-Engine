@@ -4,6 +4,9 @@
     <Filter Include="Usagi">
       <UniqueIdentifier>{DEDC410E-4AF1-69BF-1373-0D1F7F4666F0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Usagi\Events">
+      <UniqueIdentifier>{02A39E9A-EE05-2E3F-978B-66F583CDF9C1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Usagi.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\Usagi\EntryPoint.h">
       <Filter>Usagi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Usagi\Events\ApplicationEvent.h">
+      <Filter>Usagi\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Usagi\Events\Event.h">
+      <Filter>Usagi\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Usagi\Events\KeyEvent.h">
+      <Filter>Usagi\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Usagi\Events\MouseEvent.h">
+      <Filter>Usagi\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Usagi\Log.h">
       <Filter>Usagi</Filter>

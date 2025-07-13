@@ -10,6 +10,8 @@ workspace "Usagi"
 	}
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
+	
+-------- USAGI --------
 
 project "Usagi"
 	location "Usagi"
@@ -27,6 +29,7 @@ project "Usagi"
 
 	includedirs
 	{
+		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include"
 	}
 
@@ -94,7 +97,7 @@ project "Sandbox"
 
 	defines
 	{
-		"USAGI_PLATFORM_WINDOWS",
+		"USAGI_PLATFORM_WINDOWS"
 	}
 
 	filter "configurations:Debug"

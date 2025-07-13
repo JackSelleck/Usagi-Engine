@@ -11,3 +11,5 @@
 #else
 	#error Usagi Engine only supports Windows! Sorry :(
 #endif
+
+#define BIT(x) (1 << x)
