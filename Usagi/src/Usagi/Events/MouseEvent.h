@@ -52,6 +52,19 @@ namespace Usagi {
 		float m_XOffset, m_YOffset;
 	};
 
+	class USAGI_API MouseButtonEvent : public Event
+	{
+	public:
+		inline int GetMouseButton() const { return m_Button; }
+
+		EVENT_CLASS_CATEGORY(EventCategoryMouse | EventCategoryInput)
+	protected:
+		MouseButtonEvent(int button)
+			: m_Button(button) {}
+
+		int m_Button;
+	};
+
 	class USAGI_API MouseButtonPressedEvent : public MouseButtonEvent
 	{
 	public:
