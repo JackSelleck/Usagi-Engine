@@ -1,9 +1,8 @@
 #pragma once
 
-#include "Usagi/Core.h"
+#include "UsagiPch.h"
 
-#include <string>
-#include <functional>
+#include "Usagi/Core.h"
 
 namespace Usagi
 {

@@ -21,6 +21,9 @@ project "Usagi"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "UsagiPch.h"
+	pchsource "Usagi/src/UsagiPch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",

@@ -1,3 +1,4 @@
+#include "UsagiPch.h"
 #include "Application.h"
 
 #include "Usagi/Events/ApplicationEvent.h"

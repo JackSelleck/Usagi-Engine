@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Usagi{
 
 	class USAGI_API KeyEvent : public Event

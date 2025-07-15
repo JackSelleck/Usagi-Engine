@@ -1,3 +1,5 @@
+#include "UsagiPch.h"
+
 #pragma once
 
 #ifdef USAGI_PLATFORM_WINDOWS
