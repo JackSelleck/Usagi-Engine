@@ -12,6 +12,8 @@
 #include <unordered_map>
 #include <unordered_set>
 
+#include <Usagi/log.h>
+
 #ifdef USAGI_PLATFORM_WINDOWS
 	#include <Windows.h>
 #endif

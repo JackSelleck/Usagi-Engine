@@ -4,11 +4,13 @@
 #include "Usagi/Events/ApplicationEvent.h"
 #include "Usagi/Log.h"
 
+#include <GLFW/glfw3.h>
+
 namespace Usagi {
 
 	Application::Application()
 	{
-
+		m_Window = std::unique_ptr<Window>(Window::Create());
 	}
 
 	Application::~Application()
@@ -18,17 +20,10 @@ namespace Usagi {
 
 	void Application::Run()
 	{
-		WindowResizeEvent e(1280, 720);
-		if (e.IsInCategory(EventCategoryApplication))
-		{
-			USAGI_TRACE(e.ToString());
+		while (m_Running)
+		{			
+			m_Window->OnUpdate();
 		}
-		if (e.IsInCategory(EventCategoryInput))
-		{
-			USAGI_TRACE(e.ToString());
-		}
-			
-		while (true);
 	}
 
 }
