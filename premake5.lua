@@ -23,6 +23,7 @@ project "Usagi"
 	location "Usagi"
 	kind "SharedLib"
 	language "C++"
+	staticruntime "On"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")

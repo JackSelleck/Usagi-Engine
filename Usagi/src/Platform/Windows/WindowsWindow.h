@@ -15,7 +15,7 @@ namespace Usagi {
 		void OnUpdate() override;
 
 		inline unsigned int GetWidth() const override { return m_Data.Width; }
-		inline unsigned int GetWidth() const override { return m_Data.Height; }
+		inline unsigned int GetHeight() const override { return m_Data.Height; }
 
 		// Window Attributes
 		inline void SetEventCallback(const EventCallbackFn& callback) override { m_Data.EventCallback = callback; }
