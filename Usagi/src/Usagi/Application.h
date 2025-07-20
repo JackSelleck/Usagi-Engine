@@ -2,6 +2,8 @@
 
 #include "Core.h"
 #include "Events/Event.h"
+#include "Usagi/Events/ApplicationEvent.h"
+
 #include "Window.h"
 
 namespace Usagi
@@ -14,7 +16,13 @@ namespace Usagi
 
 		void Run();
 
+		void OnEvent(Event& e);
+
 	private:
+		
+		// for closing application
+		bool OnWindowClose(WindowCloseEvent& e);
+
 		std::unique_ptr<Window> m_Window;
 		bool m_Running = true;
 	};

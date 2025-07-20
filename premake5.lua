@@ -79,6 +79,7 @@ project "Usagi"
 		defines "USAGI_DIST"
 		optimize "On"
 
+
 -------- SANDBOX --------
 
 project "Sandbox"
