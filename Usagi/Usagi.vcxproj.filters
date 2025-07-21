@@ -40,6 +40,12 @@
     <ClInclude Include="src\Usagi\Events\MouseEvent.h">
       <Filter>Usagi\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Usagi\Layer.h">
+      <Filter>Usagi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Usagi\LayerStack.h">
+      <Filter>Usagi</Filter>
+    </ClInclude>
     <ClInclude Include="src\Usagi\Log.h">
       <Filter>Usagi</Filter>
     </ClInclude>
@@ -53,6 +59,12 @@
       <Filter>Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\Usagi\Application.cpp">
+      <Filter>Usagi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Usagi\Layer.cpp">
+      <Filter>Usagi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Usagi\LayerStack.cpp">
       <Filter>Usagi</Filter>
     </ClCompile>
     <ClCompile Include="src\Usagi\Log.cpp">

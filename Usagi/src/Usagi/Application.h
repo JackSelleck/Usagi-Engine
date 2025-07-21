@@ -1,10 +1,11 @@
 #pragma once
 
 #include "Core.h"
-#include "Events/Event.h"
-#include "Usagi/Events/ApplicationEvent.h"
 
 #include "Window.h"
+#include "Usagi/LayerStack.h"
+#include "Usagi/Events/Event.h"
+#include "Usagi/Events/ApplicationEvent.h"
 
 namespace Usagi
 {
@@ -18,6 +19,9 @@ namespace Usagi
 
 		void OnEvent(Event& e);
 
+		void PushLayer(Layer* layer);
+		void PushOverlay(Layer* layer);
+
 	private:
 		
 		// for closing application
@@ -25,6 +29,9 @@ namespace Usagi
 
 		std::unique_ptr<Window> m_Window;
 		bool m_Running = true;
+
+		// layerstack inherits lifetime of application
+		LayerStack m_LayerStack;
 	};
 
 	// To be defined in CLIENT

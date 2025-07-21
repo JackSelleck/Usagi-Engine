@@ -84,7 +84,7 @@
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
-      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/utf-8 /MDd %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
@@ -111,7 +111,7 @@
       <MinimalRebuild>false</MinimalRebuild>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/utf-8 /MD %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
@@ -139,7 +139,7 @@
       <MinimalRebuild>false</MinimalRebuild>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/utf-8 /MD %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
@@ -164,6 +164,8 @@
     <ClInclude Include="src\Usagi\Events\Event.h" />
     <ClInclude Include="src\Usagi\Events\KeyEvent.h" />
     <ClInclude Include="src\Usagi\Events\MouseEvent.h" />
+    <ClInclude Include="src\Usagi\Layer.h" />
+    <ClInclude Include="src\Usagi\LayerStack.h" />
     <ClInclude Include="src\Usagi\Log.h" />
     <ClInclude Include="src\Usagi\Window.h" />
     <ClInclude Include="src\UsagiPch.h" />
@@ -171,6 +173,8 @@
   <ItemGroup>
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
     <ClCompile Include="src\Usagi\Application.cpp" />
+    <ClCompile Include="src\Usagi\Layer.cpp" />
+    <ClCompile Include="src\Usagi\LayerStack.cpp" />
     <ClCompile Include="src\Usagi\Log.cpp" />
     <ClCompile Include="src\UsagiPch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>

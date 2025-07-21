@@ -2,8 +2,8 @@
 
 // For use by Usagi applications
 
-#include <stdio.h>
 #include "Usagi/Application.h"
+#include "Usagi/Layer.h"
 #include "Usagi/Log.h"
 
 // ------- Entry Point -------
