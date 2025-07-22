@@ -14,8 +14,10 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 -- Include directories relative to root folder (solution directory)
 IncludeDir = {}
 IncludeDir["GLFW"] = "Usagi/vendor/GLFW/include"
+IncludeDir["Glad"] = "Usagi/vendor/Glad/include"
 
 include "Usagi/vendor/GLFW"
+include "Usagi/vendor/Glad"
 	
 -------- USAGI --------
 
@@ -41,12 +43,14 @@ project "Usagi"
 	{
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.Glad}"
 	}
 
 	links
 	{
 		"GLFW",
+		"Glad",
 		"opengl32.lib"
 	}
 
@@ -59,7 +63,8 @@ project "Usagi"
 	defines
 	{
 		"USAGI_PLATFORM_WINDOWS",
-		"USAGI_BUILD_DLL"
+		"USAGI_BUILD_DLL",
+		"GLFW_INCLUDE_NONE"
 	}
 
 	postbuildcommands
