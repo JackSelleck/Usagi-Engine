@@ -6,6 +6,8 @@
 #include "Usagi/Layer.h"
 #include "Usagi/Log.h"
 
+#include "Usagi/ImGui/ImGuiLayer.h"
+
 // ------- Entry Point -------
 #include "Usagi/EntryPoint.h"
 // ---------------------------

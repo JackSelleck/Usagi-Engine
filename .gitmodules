@@ -4,3 +4,6 @@
 [submodule "Usagi/vendor/GLFW"]
 	path = Usagi/vendor/GLFW
 	url = https://github.com/JackSelleck/glfw.git
+[submodule "Usagi/vendor/imgui"]
+	path = Usagi/vendor/imgui
+	url = https://github.com/JackSelleck/imgui

@@ -15,9 +15,11 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 IncludeDir = {}
 IncludeDir["GLFW"] = "Usagi/vendor/GLFW/include"
 IncludeDir["Glad"] = "Usagi/vendor/Glad/include"
+IncludeDir["ImGui"] = "Usagi/vendor/ImGui"
 
 include "Usagi/vendor/GLFW"
 include "Usagi/vendor/Glad"
+include "Usagi/vendor/ImGui"
 	
 -------- USAGI --------
 
@@ -25,7 +27,7 @@ project "Usagi"
 	location "Usagi"
 	kind "SharedLib"
 	language "C++"
-	staticruntime "On"
+	staticruntime "off"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
@@ -44,19 +46,20 @@ project "Usagi"
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
 		"%{IncludeDir.GLFW}",
-		"%{IncludeDir.Glad}"
+		"%{IncludeDir.Glad}",
+		"%{IncludeDir.ImGui}"
 	}
 
 	links
 	{
 		"GLFW",
 		"Glad",
+		"ImGui",
 		"opengl32.lib"
 	}
 
 	filter "system:windows"
 		cppdialect "C++17"
-		staticruntime "On"
 		systemversion "latest"
 		buildoptions { "/utf-8" }
 

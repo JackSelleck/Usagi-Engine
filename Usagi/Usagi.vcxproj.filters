@@ -13,6 +13,9 @@
     <Filter Include="Usagi\Events">
       <UniqueIdentifier>{02A39E9A-EE05-2E3F-978B-66F583CDF9C1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Usagi\ImGui">
+      <UniqueIdentifier>{8800403B-F4B5-B830-7DAA-B207E95EAF34}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
@@ -40,6 +43,9 @@
     <ClInclude Include="src\Usagi\Events\MouseEvent.h">
       <Filter>Usagi\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Usagi\ImGui\ImGuiLayer.h">
+      <Filter>Usagi\ImGui</Filter>
+    </ClInclude>
     <ClInclude Include="src\Usagi\Layer.h">
       <Filter>Usagi</Filter>
     </ClInclude>
@@ -60,6 +66,9 @@
     </ClCompile>
     <ClCompile Include="src\Usagi\Application.cpp">
       <Filter>Usagi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Usagi\ImGui\ImGuiLayer.cpp">
+      <Filter>Usagi\ImGui</Filter>
     </ClCompile>
     <ClCompile Include="src\Usagi\Layer.cpp">
       <Filter>Usagi</Filter>
