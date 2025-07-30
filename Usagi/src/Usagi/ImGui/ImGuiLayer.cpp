@@ -130,7 +130,7 @@ namespace Usagi {
 		return false;
 	}
 
-	// Key Definitions for ImGui
+	// Key Definitions for ImGui Typing
 	ImGuiKey KeyCodeToImGuiKey(int keyCode)
 	{
 		switch (keyCode)
