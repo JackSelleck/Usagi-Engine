@@ -32,6 +32,8 @@ namespace Usagi {
 		io.BackendFlags |= ImGuiBackendFlags_HasMouseCursors;
 		io.BackendFlags |= ImGuiBackendFlags_HasSetMousePos;
 
+		// I feel like this isnt being used
+		/*
 		io.AddKeyEvent(ImGuiKey_Tab,		key == GLFW_KEY_TAB && isPressed);
 		io.AddKeyEvent(ImGuiKey_LeftArrow,	key == GLFW_KEY_LEFT && isPressed);
 		io.AddKeyEvent(ImGuiKey_RightArrow, key == GLFW_KEY_RIGHT && isPressed);
@@ -53,7 +55,7 @@ namespace Usagi {
 		io.AddKeyEvent(ImGuiKey_X,		    key == GLFW_KEY_X && isPressed);
 		io.AddKeyEvent(ImGuiKey_Y,		    key == GLFW_KEY_Y && isPressed);
 		io.AddKeyEvent(ImGuiKey_Z,		    key == GLFW_KEY_Z && isPressed);
-
+		*/
 
 		ImGui_ImplOpenGL3_Init("#version 410");
 	}

@@ -59,6 +59,9 @@
       <Filter>Usagi</Filter>
     </ClInclude>
     <ClInclude Include="src\UsagiPch.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
+    <ClInclude Include="src\Usagi\Input.h" />
+    <ClInclude Include="src\Usagi\KeyCodes.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
@@ -80,5 +83,6 @@
       <Filter>Usagi</Filter>
     </ClCompile>
     <ClCompile Include="src\UsagiPch.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsInput.cpp" />
   </ItemGroup>
 </Project>

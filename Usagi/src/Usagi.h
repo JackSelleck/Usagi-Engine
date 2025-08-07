@@ -3,6 +3,7 @@
 // For use by Usagi applications
 
 #include "Usagi/Application.h"
+#include "Usagi/Input.h"
 #include "Usagi/Layer.h"
 #include "Usagi/Log.h"
 

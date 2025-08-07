@@ -155,6 +155,7 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="src\Usagi.h" />
     <ClInclude Include="src\Usagi\Application.h" />
@@ -165,6 +166,8 @@
     <ClInclude Include="src\Usagi\Events\KeyEvent.h" />
     <ClInclude Include="src\Usagi\Events\MouseEvent.h" />
     <ClInclude Include="src\Usagi\ImGui\ImGuiLayer.h" />
+    <ClInclude Include="src\Usagi\Input.h" />
+    <ClInclude Include="src\Usagi\KeyCodes.h" />
     <ClInclude Include="src\Usagi\Layer.h" />
     <ClInclude Include="src\Usagi\LayerStack.h" />
     <ClInclude Include="src\Usagi\Log.h" />
@@ -172,6 +175,7 @@
     <ClInclude Include="src\UsagiPch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Platform\Windows\WindowsInput.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
     <ClCompile Include="src\Usagi\Application.cpp" />
     <ClCompile Include="src\Usagi\ImGui\ImGuiLayer.cpp" />
