@@ -171,6 +171,7 @@
     <ClInclude Include="src\Usagi\Layer.h" />
     <ClInclude Include="src\Usagi\LayerStack.h" />
     <ClInclude Include="src\Usagi\Log.h" />
+    <ClInclude Include="src\Usagi\MouseButtonCodes.h" />
     <ClInclude Include="src\Usagi\Window.h" />
     <ClInclude Include="src\UsagiPch.h" />
   </ItemGroup>
