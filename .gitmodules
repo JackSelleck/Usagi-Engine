@@ -7,3 +7,6 @@
 [submodule "Usagi/vendor/imgui"]
 	path = Usagi/vendor/imgui
 	url = https://github.com/JackSelleck/imgui
+[submodule "Usagi/vendor/glm/glm"]
+	path = Usagi/vendor/glm/glm
+	url = https://github.com/g-truc/glm

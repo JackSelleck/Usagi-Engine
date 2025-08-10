@@ -27,7 +27,6 @@ public:
 			USAGI_TRACE("{0}", (char)e.GetKeyCode());
 		}
 	}
-
 };
 
 class Sandbox : public Usagi::Application
@@ -48,4 +47,4 @@ public:
 Usagi::Application* Usagi::CreateApplication()
 {
 	return new Sandbox();
-}
+} 
