@@ -7,6 +7,8 @@
 #include "Usagi/Events/Event.h"
 #include "Usagi/Events/ApplicationEvent.h"
 
+#include "Usagi/ImGui/ImGuiLayer.h"
+
 namespace Usagi
 {
 	class USAGI_API Application
@@ -29,6 +31,7 @@ namespace Usagi
 		bool OnWindowClose(WindowCloseEvent& e);
 
 		std::unique_ptr<Window> m_Window;
+		ImGuiLayer* m_ImGuiLayer;
 		bool m_Running = true;
 		LayerStack m_LayerStack;
 	private:

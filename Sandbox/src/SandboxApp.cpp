@@ -1,5 +1,7 @@
 #include <Usagi.h>
 
+//#include "imgui/imgui.h"
+
 class ExampleLayer : public Usagi::Layer
 {
 public:
@@ -15,6 +17,13 @@ public:
 			USAGI_TRACE("Tab key is pressed!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 		}
 	}
+
+	//void OnImGuiRender() override
+	//{
+		//ImGui::Begin("Test")
+	//	ImGui::Text("Hello World")
+		//ImGui::Begin("Test")
+	//}
 
 	void OnEvent(Usagi::Event& event) override
 	{
@@ -35,7 +44,6 @@ public:
 	Sandbox()
 	{
 		PushLayer(new ExampleLayer());
-		PushOverlay(new Usagi::ImGuiLayer());
 	}
 
 	~Sandbox()

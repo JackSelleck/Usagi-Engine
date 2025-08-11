@@ -117,6 +117,7 @@ project "Sandbox"
 	{
 		"Usagi/vendor/spdlog/include",
 		"Usagi/src",
+		"Usagi/vendor",
 		"%{IncludeDir.glm}"
 	}
 
