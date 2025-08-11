@@ -6,7 +6,7 @@
 	url = https://github.com/JackSelleck/glfw.git
 [submodule "Usagi/vendor/imgui"]
 	path = Usagi/vendor/imgui
-	url = https://github.com/JackSelleck/imgui
+	url = url = https://github.com/JackSelleck/imgui.git
 [submodule "Usagi/vendor/glm/glm"]
 	path = Usagi/vendor/glm/glm
 	url = https://github.com/g-truc/glm
