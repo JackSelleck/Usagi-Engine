@@ -1,6 +1,6 @@
 #include <Usagi.h>
 
-//#include "imgui/imgui.h"
+#include "imgui/imgui.h"
 
 class ExampleLayer : public Usagi::Layer
 {
@@ -18,12 +18,10 @@ public:
 		}
 	}
 
-	//void OnImGuiRender() override
-	//{
-		//ImGui::Begin("Test")
-	//	ImGui::Text("Hello World")
-		//ImGui::Begin("Test")
-	//}
+	void OnImGuiRender() override
+	{
+
+	}
 
 	void OnEvent(Usagi::Event& event) override
 	{

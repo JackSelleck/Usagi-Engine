@@ -5,7 +5,6 @@
 #include "backends/imgui_impl_glfw.h"
 #include "backends/imgui_impl_opengl3.h"
 
-
 #include "Usagi/Application.h"
 
 // TEMPORARY
@@ -23,6 +22,7 @@ namespace Usagi {
 
 	ImGuiLayer::~ImGuiLayer()
 	{
+
 	}
 
 	void ImGuiLayer::OnAttach()
@@ -31,7 +31,7 @@ namespace Usagi {
 		ImGui::CreateContext();
 		ImGuiIO& io = ImGui::GetIO(); (void)io;
 		io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard; // enable keyboard controls
-		//io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad; // enable gamepad controls
+		io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad; // enable gamepad controls
 		io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;  // enable docking (LOL!)
 		io.ConfigFlags |= ImGuiConfigFlags_ViewportsEnable; // enable multi viewport / platform windows
 		//io.ConfigFlags |= ImGuiConfigFlags_ViewportsNoTaskBarIcons;
@@ -74,7 +74,7 @@ namespace Usagi {
 	{
 		ImGuiIO& io = ImGui::GetIO();
 		Application& app = Application::Get();
-		io.DisplaySize = ImVec2(app.GetWindow().GetWidth(), app.GetWindow().GetHeight());
+		io.DisplaySize = ImVec2((float)app.GetWindow().GetWidth(), (float)app.GetWindow().GetHeight());
 
 		// Rendering
 		ImGui::Render();

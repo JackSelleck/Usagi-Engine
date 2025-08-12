@@ -3,11 +3,15 @@
 // Checks the users operating system
 
 #ifdef USAGI_PLATFORM_WINDOWS
+#if USAGI_DYNAMIC_LINK
 	#ifdef USAGI_BUILD_DLL
 		#define USAGI_API __declspec(dllexport)
 	#else 
 		#define USAGI_API __declspec(dllimport)
 	#endif
+#else
+	#define USAGI_API
+#endif
 #else
 	#error Usagi Engine only supports Windows! Sorry :(
 #endif
