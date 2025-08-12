@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Usagi/Window.h"
+#include "Usagi/Renderer/GraphicsContext.h"
 
 #include <GLFW/glfw3.h>
 
@@ -28,6 +29,8 @@ namespace Usagi {
 		virtual void ShutDown();
 	private:
 		GLFWwindow* m_Window;
+
+		GraphicsContext* m_Context;
 
 		struct WindowData
 		{
