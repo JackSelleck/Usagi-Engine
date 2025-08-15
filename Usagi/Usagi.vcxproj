@@ -165,6 +165,7 @@
     <ClInclude Include="src\Usagi\Log.h" />
     <ClInclude Include="src\Usagi\MouseButtonCodes.h" />
     <ClInclude Include="src\Usagi\Renderer\GraphicsContext.h" />
+    <ClInclude Include="src\Usagi\Renderer\Shader.h" />
     <ClInclude Include="src\Usagi\Window.h" />
     <ClInclude Include="src\UsagiPch.h" />
     <ClInclude Include="vendor\glm\glm\common.hpp" />
@@ -1017,6 +1018,7 @@
     <ClCompile Include="src\UsagiPch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="src\Usagi\Renderer\Shader.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="vendor\GLFW\GLFW.vcxproj">
