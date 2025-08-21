@@ -2635,6 +2635,9 @@
       <Filter>vendor\glm\glm</Filter>
     </ClInclude>
     <ClInclude Include="src\Usagi\Renderer\Shader.h" />
+    <ClInclude Include="src\Usagi\Renderer\Buffer.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLBuffer.h" />
+    <ClInclude Include="src\Usagi\Renderer\Renderer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp">
@@ -2668,5 +2671,8 @@
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="src\Usagi\Renderer\Shader.cpp" />
+    <ClCompile Include="src\Usagi\Renderer\Buffer.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLBuffer.cpp" />
+    <ClCompile Include="src\Usagi\Renderer\Renderer.cpp" />
   </ItemGroup>
 </Project>
