@@ -8,8 +8,8 @@ namespace Usagi {
 	Shader::Shader(const std::string& vertexSrc, const std::string& fragmentSrc)
 	{
 		// Create an empty vertex shader handle
-		GLuint vertexShader = glCreateShader(GL_VERTEX_SHADER);
 
+		GLuint vertexShader = glCreateShader(GL_VERTEX_SHADER);
 		// Send the vertex shader source code to GL
 		// Note that std::string's .c_str is NULL character terminated.
 		const GLchar* source = vertexSrc.c_str();
