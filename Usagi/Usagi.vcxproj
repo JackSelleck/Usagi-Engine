@@ -146,6 +146,7 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Platform\OpenGL\OpenGLVertexArray.h" />
     <ClInclude Include="src\Usagi\Renderer\Renderer.h" />
     <ClInclude Include="src\Platform\OpenGL\OpenGLBuffer.h" />
     <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h" />
@@ -169,6 +170,7 @@
     <ClInclude Include="src\Usagi\Renderer\Buffer.h" />
     <ClInclude Include="src\Usagi\Renderer\GraphicsContext.h" />
     <ClInclude Include="src\Usagi\Renderer\Shader.h" />
+    <ClInclude Include="src\Usagi\Renderer\VertexArray.h" />
     <ClInclude Include="src\Usagi\Window.h" />
     <ClInclude Include="src\UsagiPch.h" />
     <ClInclude Include="vendor\glm\glm\common.hpp" />
@@ -1009,6 +1011,7 @@
     <ClInclude Include="vendor\glm\glm\vector_relational.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Platform\OpenGL\OpenGLVertexArray.cpp" />
     <ClCompile Include="src\Usagi\Renderer\Renderer.cpp" />
     <ClCompile Include="src\Platform\OpenGL\OpenGLBuffer.cpp" />
     <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp" />
@@ -1025,6 +1028,7 @@
     </ClCompile>
     <ClCompile Include="src\Usagi\Renderer\Buffer.cpp" />
     <ClCompile Include="src\Usagi\Renderer\Shader.cpp" />
+    <ClCompile Include="src\Usagi\Renderer\VertexArray.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="vendor\GLFW\GLFW.vcxproj">
