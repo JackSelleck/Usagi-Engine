@@ -2640,6 +2640,9 @@
     <ClInclude Include="src\Usagi\Renderer\Renderer.h" />
     <ClInclude Include="src\Usagi\Renderer\VertexArray.h" />
     <ClInclude Include="src\Platform\OpenGL\OpenGLVertexArray.h" />
+    <ClInclude Include="src\Usagi\Renderer\RendererAPI.h" />
+    <ClInclude Include="src\Usagi\Renderer\RenderCommand.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLRendererAPI.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp">
@@ -2678,5 +2681,8 @@
     <ClCompile Include="src\Usagi\Renderer\Renderer.cpp" />
     <ClCompile Include="src\Usagi\Renderer\VertexArray.cpp" />
     <ClCompile Include="src\Platform\OpenGL\OpenGLVertexArray.cpp" />
+    <ClCompile Include="src\Usagi\Renderer\RendererAPI.cpp" />
+    <ClCompile Include="src\Usagi\Renderer\RenderCommand.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLRendererAPI.cpp" />
   </ItemGroup>
 </Project>

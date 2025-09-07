@@ -10,8 +10,8 @@ namespace Usagi
 	{
 		switch (Renderer::GetAPI())
 		{
-			case RendererAPI::None:		USAGI_CORE_ASSERT(false, "RendererAPI::None is currently not supported!"); return nullptr;
-			case RendererAPI::OpenGL:	return new OpenGLVertexArray();
+			case RendererAPI::API::None:	USAGI_CORE_ASSERT(false, "RendererAPI::None is currently not supported!"); return nullptr;
+			case RendererAPI::API::OpenGL:	return new OpenGLVertexArray();
 		}
 
 		USAGI_CORE_ASSERT(false, "Unknown Renderer API!");
